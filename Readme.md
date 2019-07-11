@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [  Елена](https://up.htmlacademy.ru/adaptive/17/user/1005159).
-* Наставник: `Неизвестно`.
+* Студент: [Елена](https://up.htmlacademy.ru/adaptive/17/user/1005159).
+* Наставник: `Дмитрий (sench) Железцов`.
 
 ---
 
