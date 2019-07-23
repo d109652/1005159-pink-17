@@ -8,11 +8,12 @@
   display: inline-block;
   margin-left: 15px;
   margin-bottom: 13px;
+  background-image: url("../img/logo-pink-white-tablet");
 }
 
 .page-header__toggle {
   position: absolute;
-  left: 280px;
+  right: 20px;
   width: 26px;
   height: 26px;
 
@@ -23,3 +24,17 @@
   background-repeat: no-repeat;
   border: 2px solid transparent;
 }
+
+@media(min-width: @desktop-width) {
+  .page-header {
+    display: flex;
+    padding: 40px 130px 10px 130px;
+    margin-bottom: -107px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+

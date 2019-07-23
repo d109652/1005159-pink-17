@@ -3,6 +3,7 @@
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 55px;
+
   text-align: center;
 }
 
@@ -16,8 +17,14 @@
   margin-bottom: 20px;
 }
 
-.photo-tape__image {
-  margin-left: 20px;
+.photo-tape__item {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.photo-tape__item-view {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .photo-tape__information-wrapper {
@@ -65,4 +72,65 @@
   line-height: 24px;
   text-transform: uppercase;
   color: @pink;
+}
+
+@media(min-width: @tablet-width) {
+  .photo-tape__text {
+    width: 442px;
+    font-size: 18px;
+  }
+
+  .photo-tape__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .photo-tape__item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .photo-tape__item-view {
+    width: 660px;
+  }
+
+  .photo-tape__information-wrapper {
+    position: relative;
+    width: 300px;
+  }
+
+  .photo-tape__information-wrapper-view {
+    position: relative;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .photo-tape__likes-view {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .photo-tape__text {
+    width: 580px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .photo-tape__item-view {
+    width: 1200px;
+  }
+
+  .photo-tape__information-wrapper-view {
+    width: 940px;
+  }
+
+  .photo-tape__list {
+    width: 940px;
+    margin: 0 auto;
+  }
+
 }

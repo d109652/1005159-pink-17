@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  width: 320px;
   background-color: #ffffff;
 
   font-family: "Open Sans", "Arial", sans-serif;
@@ -10,12 +9,8 @@ body {
   line-height: 30px;
 }
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+.site-wrapper {
+  margin: 0 auto;
 }
 
 a {
@@ -31,4 +26,22 @@ a {
 .indent-zeroing {
   margin: 0;
   padding: 0;
+}
+
+@media(min-width: @mobile-width) {
+  .site-wrapper {
+    width: 320px;
+  }
+}
+
+@media(min-width: @tablet-width) {
+  .site-wrapper {
+    width: 660px;
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .site-wrapper {
+    width: 1200px;
+  }
 }
