@@ -29,10 +29,32 @@
 
 .page-footer__copyright-logo {
   position: absolute;
-  left: 220px;
+  right: 80px;
   top: 15px;
 }
 
 .page-footer__copyright-svg {
   fill: @pink;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-footer__social-list {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .page-footer__copyright-logo {
+    right: -30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    margin: 70px 130px;
+  }
 }
