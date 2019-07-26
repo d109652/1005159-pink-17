@@ -1,28 +1,118 @@
 .page-header {
-  position: relative;
+  margin-bottom: -65px;
   background-color: @bg-navy;
   padding-top: 15px;
 }
 
 .page-header__logo {
   display: inline-block;
-  margin-left: 15px;
-  margin-bottom: 13px;
+  margin-top: 6px;
+  margin-left: 16px;
+  margin-bottom: 16px;
   background-image: url("../img/logo-pink-white-tablet");
 }
 
-.page-header__toggle {
-  position: absolute;
-  right: 20px;
-  width: 26px;
-  height: 26px;
+.page-header__logo-image {
+  width: 85px;
+}
 
-  font-size: 0;
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -65px;
+  right: 0;
+  width: 60px;
+  height: 60px;
 
   background-color: transparent;
-  background-image: url("../img/icon-menu-cross.svg");
-  background-repeat: no-repeat;
-  border: 2px solid transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: -10px;
+
+  width: 50px;
+  height: 5px;
+
+  background-color: @white;
+  box-shadow: 0 10px 0 0 @white, 0 20px 0 0 @white;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: @pink;
+  box-shadow: 0 10px 0 0 @pink, 0 20px 0 0 @pink;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: rgba(210,40,86,0.3);
+  box-shadow: 0 10px 0 0 rgba(210,40,86,0.3), 0 20px 0 0 rgba(210,40,86,0.3);
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 16px;
+
+    width: 30px;
+    height: 5px;
+    background-color: @white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: @pink;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(210,40,86,0.3);
+  }
+}
+
+.main-nav--opened .opacity-box {
+  display: none;
+}
+
+.main-nav--nojs .opacity-box {
+  display: none;
+}
+/*
+.main-nav--closed .opacity-box {
+  width: 100%;
+  min-height: 66px;
+  margin-top: -70px;
+  background-color: transparent;
+}
+*/
+
+@media (min-width: @tablet-width) {
+  .page-header__logo-image {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .main-nav__toggle {
+    top: -83px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -33,7 +123,16 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  .page-header__toggle {
+  .main-nav {
+    margin-left: 173px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    text-transform: none;
+    background-color: transparent;
+  }
+
+  .main-nav__toggle {
     display: none;
   }
 }
