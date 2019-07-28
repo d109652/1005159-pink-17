@@ -37,6 +37,12 @@
   fill: @pink;
 }
 
+@media (max-width: @mobile-width-only) {
+  .page-footer-index {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .page-footer {
     flex-direction: row;
