@@ -17,15 +17,15 @@
             <span class="visually-hidden">открыть/закрыть меню</span>
           </button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
             <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-            <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+            <li class="site-list__item site-list__item--active"><a>Конкурс</a></li>
             <li class="site-list__item"><a href="#">HTML Academy</a></li>
           </ul>
         </nav>
       </header>
       <main class="page-form">
-        <div class="title-wrapper">
+        <div class="title-wrapper title-wrapper-form">
           <h1 class="page-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
         <p class="page-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
@@ -167,5 +167,20 @@
         </div>
       </footer>
     </div>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

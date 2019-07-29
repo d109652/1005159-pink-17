@@ -33,8 +33,7 @@
   width: 60px;
   height: 60px;
 
-  /*background-color: transparent;*/
-  background-color: tomato;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
@@ -101,14 +100,18 @@
 .main-nav--nojs .opacity-box {
   display: none;
 }
-/*
+
+.main-nav--opened .opacity-box {
+  display: none;
+}
+
 .main-nav--closed .opacity-box {
   width: 100%;
   min-height: 66px;
   margin-top: -70px;
   background-color: rgba(0, 0, 0, 0.3);
 }
-*/
+
 @media (max-width: @mobile-tablet-width-only) {
   .main-nav--closed .site-list__item {
     display: none;
@@ -143,13 +146,16 @@
   .page-header {
     display: flex;
     padding: 40px 130px 10px 130px;
-    margin-bottom: -210px;
-    /*margin-bottom: -107px;*/
-    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: -215px;
+  }
+
+  .page-header__logo  {
+    margin-top: -20px;
   }
 
   .main-nav {
-    margin-left: 173px;
+    margin-left: 215px;
+    padding-top: 4px;
     font-size: 18px;
     line-height: 18px;
     font-weight: 500;

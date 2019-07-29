@@ -16,8 +16,8 @@
               <span class="visually-hidden">открыть/закрыть меню</span>
           </button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-            <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item site-list__item--active"><a>Фотографии</a></li>
             <li class="site-list__item"><a href="form.html">Конкурс</a></li>
             <li class="site-list__item"><a href="#">HTML Academy</a></li>
           </ul>
@@ -157,5 +157,20 @@
         </div>
       </footer>
     </div>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>
