@@ -37,8 +37,7 @@
 .page-photo__title {
   width: 230px;
   margin: 0 auto;
-  padding: 0;
-  padding-top: 86px;
+  padding-top: 98px;
   padding-bottom: 80px;
   text-align: center;
   font-size: 24px;
@@ -49,21 +48,11 @@
 
 @media (min-width: @tablet-width) {
   .title-wrapper {
-    /*height: 618px;*/
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position-x: -270px;
-    background-position-y: -112px;
-  }
-
-  .title-wrapper-index {
-    height: 730px;
     background-position-y: 0;
-    background-color: yellow;
   }
 
-  .title-wrapper-form {
-    background-position-y: 0px;
-  }
 
   .page-index__title {
     width: 190px;
@@ -72,6 +61,11 @@
     padding-top: 205px;
     font-size: 40px;
     line-height: 48px;
+  }
+
+  .page-index__photo {
+    position: absolute;
+    left: 399px;
   }
 
   .page-form__title {
@@ -83,10 +77,15 @@
     line-height: 60px;
   }
 
-  .page-index__photo {
-    position: absolute;
-    left: 399px;
+  .page-photo__title {
+    width: 356px;
+    margin-top: -110px;
+    padding-top: 179px;
+    padding-bottom: 140px;
+    font-size: 50px;
+    line-height: 60px;
   }
+
 }
 
 @media (min-width: @desktop-width) {
@@ -108,8 +107,8 @@
 
   .page-photo__title {
     width: 370px;
-    padding-top: 188px;
-    padding-bottom: 102px;
+    padding-top: 268px;
+    padding-bottom: 142px;
     font-size: 50px;
     line-height: 60px;
   }

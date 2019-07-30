@@ -5,6 +5,8 @@
 }
 
 .page-header__logo {
+  position: relative;
+  z-index: 20;
   display: inline-block;
   margin-top: 6px;
   margin-left: 16px;
@@ -106,9 +108,11 @@
 }
 
 .main-nav--closed .opacity-box {
+  position: absolute;
+  top: -34px;
   width: 100%;
-  min-height: 66px;
-  margin-top: -70px;
+  min-height: 106px;
+  margin-top: -76px;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
