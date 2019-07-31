@@ -103,10 +103,6 @@
   display: none;
 }
 
-.main-nav--opened .opacity-box {
-  display: none;
-}
-
 .main-nav--closed .opacity-box {
   position: absolute;
   top: -34px;
@@ -153,7 +149,7 @@
     margin-bottom: -215px;
   }
 
-  .page-header__logo  {
+  .page-header__logo {
     margin-top: -20px;
   }
 
@@ -169,5 +165,14 @@
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .opacity-box {
+    position: absolute;
+    top: -34px;
+    width: 100%;
+    min-height: 106px;
+    margin-top: -76px;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
