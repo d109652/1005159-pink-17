@@ -28,7 +28,11 @@
       <main class="page-index">
         <div class="title-wrapper">
           <h1 class="page-index__title">Взгляните на жизнь иначе!</h1>
-          <img class="download__photo" src="img/iphone-hand-mobile@1x.png" width="257" height="288" alt="фотография открытого приложения">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+            <img class="download__photo" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" width="257" height="288" alt="фотография открытого приложения">
+          </picture>
         </div>
         <section class="download">
           <h2 class="visually-hidden">о скачивании приложения</h2>
@@ -70,7 +74,11 @@
             <li class="advantages__item">
               <h3 class="advantages__title">Заводит новых друзей</h3>
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-              <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" width="158" height="320" alt="Pink:'Всем поивет!'">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/iphone-screen-desktop@1x.png 1x, img/iphone-screen-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/iphone-screen-tablet@1x.png 1x, img/iphone-screen-tablet@2x.png 2x">
+                <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="158" height="320" alt="Pink:'Всем поивет!'">
+              </picture>
             </li>
           </ul>
         </section>
