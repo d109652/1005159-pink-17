@@ -9,6 +9,7 @@
   margin-left: 15px;
   margin-bottom: 13px;
   background-image: url("../img/logo-pink-white-tablet");
+  background-color: green;
 }
 
 .page-header__toggle {
@@ -23,6 +24,13 @@
   background-image: url("../img/icon-menu-cross.svg");
   background-repeat: no-repeat;
   border: 2px solid transparent;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    width: 150px;
+    background-color: yellow;
+  }
 }
 
 @media (min-width: @desktop-width) {
