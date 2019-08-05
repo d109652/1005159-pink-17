@@ -112,6 +112,18 @@
 }
 
 @media (max-width: @mobile-tablet-width-only) {
+
+  .page-header__logo {
+    margin-bottom: 13px;
+  }
+
+  .page-header__logo-image {
+    width: 152px;
+    height: 40px;
+    margin-top: -13px;
+    margin-left: 2px;
+  }
+
   .main-nav--closed .site-list__item {
     display: none;
   }
@@ -131,9 +143,15 @@
 
 
 @media (min-width: @tablet-width) {
+
+  .page-header__logo {
+    margin-left: -2px;
+    padding-top: 8px;
+  }
+
   .page-header__logo-image {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 152px;
+    height: 40px;
   }
 
   .main-nav__toggle {
@@ -153,7 +171,7 @@
   .page-header {
     display: flex;
     position: relative;
-    padding: 40px 130px 0 130px;
+    padding: 40px 130px 15px 130px;
     margin-bottom: -215px;
     background-color: rgba(0, 0, 0, 0.3);
   }
@@ -163,7 +181,7 @@
   }
 
   .main-nav {
-    margin-left: 215px;
+    margin-left: 167px;
     padding-top: 4px;
     font-size: 18px;
     line-height: 18px;
