@@ -8,14 +8,36 @@
   position: relative;
   z-index: 20;
   display: inline-block;
-  margin-left: 15px;
+  margin-left: -100px;
   margin-top: 8px;
   margin-bottom: 14px;
 }
 
 .page-header__logo-image {
-  width: 76px;
-  height: 23px;
+  /*width: 76px;
+  height: 23px;*/
+  margin-left: -100px;
+}
+
+.page-header__logo-image-glass-desktop {
+  display: none;
+}
+
+.page-header__logo-image-glass-tablet {
+  display: none;
+}
+
+.page-header__logo-image-stars {
+  display: none;
+}
+
+.page-header__logo:hover path {
+  fill: @pink;
+}
+
+.page-header__logo:active path {
+  fill: @white;
+  opacity: 0.3;
 }
 
 .main-nav {
@@ -114,6 +136,9 @@
 
 @media (max-width: @mobile-tablet-width-only) {
   .page-header__logo {
+    margin-left: 15px;
+    margin-top: 8px;
+    margin-bottom: 14px;
     margin-bottom: 13px;
   }
 
@@ -145,6 +170,11 @@
     margin-left: 15px;
     margin-bottom: 32px;
     padding-top: 18px;
+    margin-top: 8px;
+  }
+
+  .page-header__logo-image-glass-tablet {
+    display: inline-block;
   }
 
   .page-header__logo-image {
@@ -179,6 +209,18 @@
     margin-bottom: 0;
     margin-left: -2px;
     padding-top: 0;
+  }
+
+  .page-header__logo-image-glass-desktop {
+    display: inline-block;
+  }
+
+  .page-header__logo-image-stars {
+    display: inline-block;
+  }
+
+  .page-header__logo-image-glass-tablet {
+    display: none;
   }
 
   .main-nav {

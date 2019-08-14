@@ -8,6 +8,22 @@
   margin-bottom: 40px;
 }
 
+.page-footer__logo-image-glasses-desktop {
+  display: none;
+}
+
+.page-footer__logo:hover path {
+  fill: @pink;
+}
+
+.page-footer__logo:active .page-footer__logo-image-text path {
+  fill: @bg-navy;
+}
+
+.page-footer__logo:active path {
+  opacity: 0.3;
+}
+
 .page-footer__social-list {
   .list-decoration-none;
   width: 180px;
@@ -104,6 +120,14 @@
 @media (min-width: @desktop-width) {
   .page-footer {
     width: 940px;
+  }
+
+  .page-footer__logo-image-glasses-mobile {
+    display: none;
+  }
+
+  .page-footer__logo-image-glasses-desktop {
+    display: inline-block;
   }
 
   .page-footer__copyright {
