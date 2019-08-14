@@ -6,22 +6,19 @@
 .page-footer__logo {
   text-align: center;
   margin-bottom: 40px;
+  &:hover path {
+    fill: @pink;
+  }
+  &:active path {
+    opacity: 0.3;
+  }
+  &:active .page-footer__logo-image-text path {
+    fill: @bg-navy;
+  }
 }
 
 .page-footer__logo-image-glasses-desktop {
   display: none;
-}
-
-.page-footer__logo:hover path {
-  fill: @pink;
-}
-
-.page-footer__logo:active .page-footer__logo-image-text path {
-  fill: @bg-navy;
-}
-
-.page-footer__logo:active path {
-  opacity: 0.3;
 }
 
 .page-footer__social-list {
@@ -53,8 +50,11 @@
   margin-left: 14px;
 }
 
-.page-footer__social-svg path {
+.page-footer__social-svg {
   fill: @pink;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__copyright {
@@ -74,6 +74,12 @@
 
 .page-footer__copyright-svg {
   fill: @pink;
+  &:hover {
+    fill: @bg-navy;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: @mobile-width-only) {
