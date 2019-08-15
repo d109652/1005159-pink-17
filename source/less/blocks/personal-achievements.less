@@ -1,0 +1,65 @@
+.personal-achievements {
+  margin-top: 25px;
+  background-color: @gray;
+}
+
+.personal-achievements__legend {
+  width: 230px;
+  margin: 0 auto;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  text-align: center;
+  color: @pink;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+.personal-achievements__field {
+  border: none;
+}
+
+.personal-achievements__label {
+  position: relative;
+  display: block;
+  margin-bottom: 52px;
+  margin-left: 80px;
+  font-size: 18px;
+
+  &:hover .personal-achievements__custom-checkbox {
+    border: 2px solid @bg-navy;
+  }
+
+  &:active .personal-achievements__custom-checkbox {
+    border: 2px solid @pink;
+  }
+}
+
+.personal-achievements__label:last-child {
+  margin-bottom: 36px;
+}
+
+.personal-achievements__checkbox {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.personal-achievements__custom-checkbox {
+  position: absolute;
+  left: -70px;
+  top: -3px;
+  width: 37px;
+  height: 35px;
+  box-sizing: border-box;
+  background-color: @white;
+  border: 2px solid @gray-border;
+  border-radius: 2px;
+}
+
+.personal-achievements__checkbox:checked + .personal-achievements__custom-checkbox {
+  background-image: url("../../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: 5px;
+}

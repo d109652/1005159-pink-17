@@ -1,0 +1,52 @@
+.travel-apps {
+  background-color: @gray;
+}
+
+.travel-apps__field {
+  border: none;
+}
+
+.travel-apps__legend {
+  width: 190px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  padding-top: 39px;
+  color: @pink;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 18px;
+}
+
+.travel-apps__label {
+  position: relative;
+  display: block;
+  margin-bottom: 45px;
+  margin-left: 82px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.travel-apps__radiobutton {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.travel-apps__custom-radiobutton {
+  position: absolute;
+  left: -73px;
+  top: -2px;
+  width: 37px;
+  height: 37px;
+  box-sizing: border-box;
+  background-color: @white;
+  border: 2px solid @gray-border;
+  border-radius: 50%;
+}
+
+.travel-apps__radiobutton:checked + .travel-apps__custom-radiobutton {
+  background-image: url("../../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
