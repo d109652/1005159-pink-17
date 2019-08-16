@@ -1,0 +1,80 @@
+.photo-post {
+  background-color: @gray;
+  padding-top: 20px;
+}
+.photo-post__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.photo-post__list {
+  .list-decoration-none;
+  display: flex;
+  width: 220px;
+  margin: 0 auto;
+  margin-top: 42px;
+  /*margin-left: 52px;*/
+}
+
+.photo-post__item {
+  margin-right: 34px;
+}
+
+.photo-post__item:nth-child(2) {
+  margin-right: 40px;
+}
+
+.photo-post__item:last-child {
+  margin-top: 6px;
+}
+
+.photo-post__svg {
+  fill: #b5b9be;
+  &:hover {
+    fill: #8d949b;
+  }
+}
+
+.photo-post__control {
+  margin-top: 28px;
+  padding-bottom: 32px;
+}
+
+.photo-post__scale {
+  width: 240px;
+  margin: 0 auto;
+  height: 2px;
+  background-color: @bg-navy;
+}
+
+.photo-post__buttons-container {
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
+.photo-post__button {
+  display: block;
+  width: 280px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  border-radius: 50px;
+}
+
+.photo-post__button-post {
+  color: @pink;
+  border: 3px solid @pink;
+  background-color: @gray;
+}
+
+.photo-post__button-cansel {
+  color: #dddfe0;
+  border: 3px solid #dddfe0;
+  background-color: @gray;
+}
+

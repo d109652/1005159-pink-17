@@ -35,6 +35,12 @@
   padding: 8px 15px;
   border: 2px solid #e9ebec;
   border-radius: 50%;
+  &:hover {
+    border: 2px solid @bg-navy;
+  }
+  &:active .page-footer__social-svg {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__social-item-tw {
@@ -52,9 +58,6 @@
 
 .page-footer__social-svg {
   fill: @pink;
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .page-footer__copyright {
