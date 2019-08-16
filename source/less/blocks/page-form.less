@@ -1,3 +1,28 @@
+.page-form__text {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+
+.page-form__text-mob-hidden {
+  display: none;
+}
+
+.page-form__achievments {
+  margin-top: 25px;
+}
+
+.page-form__contacts {
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+
+.page-form__impressions {
+  margin-top: 27px;
+}
+
 .page-form__button {
   display: block;
   margin: 0 auto;
@@ -18,6 +43,103 @@
   text-transform: uppercase;
 }
 
+.page-form__footnote-mob-hidden {
+  display: none;
+}
+
 .page-form__footnote-star {
   color: @pink;
+}
+
+@media (min-width: @tablet-width) {
+ .page-form__block-container {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 33px;
+ }
+
+ .page-form__apps {
+   order:1;
+   margin: 0 auto;
+   margin-top: -14px;
+ }
+
+ .page-form__contacts {
+   order: 2;
+   margin: 0 auto;
+   margin-top: 50px;
+ }
+
+ .page-form__achievments {
+   order: 3;
+   margin: 0 auto;
+   margin-top: 18px;
+   margin-bottom: 24px;
+ }
+
+ .page-form__impressions {
+   order: 4;
+   margin: 0 auto;
+ }
+
+ .page-form__text {
+    margin-top: 48px;
+    margin-bottom: 30px;
+    width: 500px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.page-form__text-mob-hidden {
+  display: inline-block;
+}
+
+.page-form__button-container {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
+}
+
+.page-form__button {
+  height: 65px;
+  padding: 0 56px;
+  margin-left: 0;
+}
+
+.page-form__footnote {
+  margin-top: 47px;
+}
+}
+
+@media (min-width: @desktop-width) {
+  .page-form__text {
+    width: 770px;
+  }
+
+  .page-form__block-container {
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 12px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .page-form__apps {
+    margin-left: 42px;
+    margin-top: -7px;
+  }
+
+  .page-form__contacts {
+    margin-top: -20px;
+  }
+
+  .page-form__button-container {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+
+  .page-form__footnote-mob-hidden {
+    display: inline-block;
+  }
 }

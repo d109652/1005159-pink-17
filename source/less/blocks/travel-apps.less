@@ -50,3 +50,41 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media (min-width: @tablet-width) {
+  .travel-apps {
+    width: 620px;
+    background-color: @white;
+  }
+
+  .travel-apps__field {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 2px solid @gray-border;
+    border-radius: 2px;
+  }
+
+  .travel-apps__legend {
+    width: 360px;
+    padding-top: 0;
+  }
+
+  .travel-apps__label {
+    margin-left: 108px;
+  }
+
+  .travel-apps__custom-radiobutton {
+    left: -60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .travel-apps {
+    width: 438px;
+    box-sizing: border-box;
+  }
+
+  .travel-apps__label {
+    margin-left: 123px;
+  }
+}

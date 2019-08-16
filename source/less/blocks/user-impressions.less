@@ -1,7 +1,3 @@
-.user-impressions {
-  margin-top: 27px;
-}
-
 .user-impressions__field {
   border: none;
 }
@@ -24,4 +20,39 @@
   border: 2px solid @gray-border;
   border-radius: 2px;
   color: @bg-navy;
+}
+
+@media (min-width: @tablet-width) {
+  .user-impressions {
+    width: 620px;
+  }
+
+  .user-impressions__field {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border: 2px solid @gray-border;
+    border-radius: 2px;
+  }
+
+  .user-impressions__legend {
+    width: 256px;
+  }
+
+  .user-impressions__textarea {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-impressions {
+    width: 940px;
+  }
+
+  .user-impressions__textarea {
+    width: 820px;
+    height: 126px;
+  }
 }
