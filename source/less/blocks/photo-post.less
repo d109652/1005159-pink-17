@@ -14,7 +14,6 @@
   width: 220px;
   margin: 0 auto;
   margin-top: 42px;
-  /*margin-left: 52px;*/
 }
 
 .photo-post__item {
@@ -38,15 +37,37 @@
 }
 
 .photo-post__control {
-  margin-top: 28px;
-  padding-bottom: 32px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 27px;
+  margin-bottom: 23px;
+  padding-bottom: 13px;
+}
+
+.photo-post__control-fill {
+  display: none;
+}
+
+.photo-post__control-contrast {
+  display: none;
 }
 
 .photo-post__scale {
+  position: absolute;
+  left: -10px;
   width: 240px;
-  margin: 0 auto;
   height: 2px;
   background-color: @bg-navy;
+}
+
+.photo-post__scale::after {
+  content: "";
+  position: absolute;
+  bottom: -35px;
+  left: -39px;
+  width: 320px;
+  height: 1px;
+  background-color: #dddfe0;
 }
 
 .photo-post__buttons-container {
@@ -79,3 +100,83 @@
   border: 3px solid #dddfe0;
   background-color: @gray;
 }
+
+@media (min-width: @tablet-width) {
+  .photo-post {
+    display: flex;
+    padding-top: 58px;
+    padding-left: 21px;
+    padding-bottom: 5px;
+  }
+
+  .photo-post__image {
+    width: 300px;
+    height: 400px;
+  }
+
+  .photo-post__list {
+    width: 290px;
+    margin-left: 48px;
+    padding-top: 9px;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .photo-post__control {
+    margin-top: 10px;
+    margin-bottom: 48px;
+  }
+
+  .photo-post__scale::after {
+    width: 276px;
+    bottom: -23px;
+  }
+
+  .photo-post__control-fill {
+    display: block;
+  }
+
+  .photo-post__control-contrast {
+    display: block;
+  }
+
+  .photo-post__scale {
+    position: static;
+    width: 202px;
+  }
+
+  .photo-post__item {
+    display: flex;
+    margin: 0;
+  }
+
+  .photo-post__item:nth-child(2) {
+    margin: 0;
+  }
+
+  .photo-post__item:last-child {
+    margin-top: -4px;
+  }
+
+  .photo-post__svg {
+    width: 23px;
+    height: 23px;
+    fill: @pink;
+  }
+
+  .photo-post__svg-contrast {
+    margin-top: 2px;
+    margin-left: 4px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .photo-post__button {
+    width: 260px;
+    margin-left: 48px;
+    margin-bottom: 24px;
+
+
+  }
+}
+

@@ -224,33 +224,43 @@
             <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
             <img class="photo-post__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="375" alt="зимний пейзаж">
           </picture>
-          <ul class="photo-post__list">
-            <li class="photo-post__item">
-              <span class="visually-hidden">обрезать</span>
-              <svg class="photo-post__svg" width="48px" height="48px">
-                <use xlink:href="#icon-editor-crop"></use>
-              </svg>
-            </li>
-            <li class="photo-post__item">
-              <span class="visually-hidden">изменить цвет</span>
-              <svg class="photo-post__svg" width="48px" height="48px">
-                <use xlink:href="#icon-editor-fill"></use>
-              </svg>
-            </li>
-            <li class="photo-post__item">
-              <span class="visually-hidden">контраст</span>
-              <svg class="photo-post__svg" width="31.92px" height="31.92px">
-                <use xlink:href="#icon-editor-contrast"></use>
-              </svg>
-            </li>
-          </ul>
-          <div class="photo-post__control">
-            <div class="photo-post__scale"></div>
-            <div class="photo-post__range-toggle"></div>
-          </div>
-          <div class="photo-post__buttons-container">
-            <button class="photo-post__button photo-post__button-post" type="button">Запостить</button>
-            <button class="photo-post__button photo-post__button-cansel" type="button">Отмена</button>
+          <div class="photo-post__control-container">
+            <ul class="photo-post__list">
+              <li class="photo-post__item">
+                <span class="visually-hidden">обрезать</span>
+                <svg class="photo-post__svg" width="48px" height="48px">
+                  <use xlink:href="#icon-editor-crop"></use>
+                </svg>
+                <div class="photo-post__control photo-post__control-crop">
+                  <div class="photo-post__scale"></div>
+                  <div class="photo-post__range-toggle"></div>
+                </div>
+              </li>
+              <li class="photo-post__item">
+                <span class="visually-hidden">изменить цвет</span>
+                <svg class="photo-post__svg" width="48px" height="48px">
+                  <use xlink:href="#icon-editor-fill"></use>
+                </svg>
+                <div class="photo-post__control photo-post__control-fill">
+                  <div class="photo-post__scale"></div>
+                  <div class="photo-post__range-toggle"></div>
+                </div>
+              </li>
+              <li class="photo-post__item">
+                <span class="visually-hidden">контраст</span>
+                <svg class="photo-post__svg photo-post__svg-contrast" width="31.92px" height="31.92px">
+                  <use xlink:href="#icon-editor-contrast"></use>
+                </svg>
+                <div class="photo-post__control photo-post__control-contrast">
+                  <div class="photo-post__scale"></div>
+                  <div class="photo-post__range-toggle"></div>
+                </div>
+              </li>
+            </ul>
+            <div class="photo-post__buttons-container">
+              <button class="photo-post__button photo-post__button-post" type="button">Запостить</button>
+              <button class="photo-post__button photo-post__button-cansel" type="button">Отмена</button>
+            </div>
           </div>
         </section>
       </main>
