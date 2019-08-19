@@ -1,10 +1,10 @@
 .tariffs {
   background-color: @gray;
+  padding-top: 100px;
 }
 
 .tariffs__list {
   display: table;
-  width: 620px;
   overflow: hidden;
 }
 
@@ -30,12 +30,13 @@
 
 .tariffs__price-item {
   display: table-cell;
-  width: 1px;
+  width: 280px;
   text-align: center;
 }
 
 .tariffs__price-item:nth-child(3) {
-  width: 255px;
+  width: 280px;
+  box-sizing: border-box;
   border-left: 2px solid @white;
   border-right: 2px solid @white;
 }
@@ -57,7 +58,7 @@
 
 .tarifs__price {
   margin-top: -15px;
-  margin-bottom: 21px;
+  margin-bottom: -8px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 400;
@@ -90,7 +91,6 @@
 
 .tariffs__option-svg-no {
   display: inline-block;
-  margin: 0 auto;
   fill: @red;
 }
 
