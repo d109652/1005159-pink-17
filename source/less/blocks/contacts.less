@@ -1,0 +1,87 @@
+.contacts__wrapper {
+  width: 244px;
+  margin: 0 auto;
+  padding-bottom: 14px;
+}
+
+.contacts__tagline {
+  width: 226px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.contacts__text {
+  margin-bottom: -17px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: @bg-navy;
+  text-align: center;
+}
+
+.contacts__data {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+  color: @pink;
+  text-align: center;
+}
+
+.contacts__map {
+  position: relative;
+  width: 320px;
+  height: 200px;
+  background-image: url("..img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position-y: center, -445px;
+  background-position-x: center, center;
+  background-color: #eae6dd;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("..img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile@2x.jpg");
+  }
+}
+
+.contacts__address {
+  position: absolute;
+  top: 95px;
+  left: 142px;
+  width: 36px;
+  height: 36px;
+  font-size: 0;
+  background-color: @white;
+  border-radius: 50%;
+}
+
+.contacts__address::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 16px;
+  height: 16px;
+  background-color: @pink;
+  border-radius: 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__map {
+    background-image: url("..img/bg-triangle-white-footer.svg"), url("../img/bg-map-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("..img/bg-triangle-white-footer.svg"), url("../img/bg-map-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: @desktop-width)  {
+  .contacts__map {
+    background-image: url("..img/bg-triangle-white-footer.svg"), url("../img/bg-map-desktop@1x.jpg");
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("..img/bg-triangle-white-footer.svg"), url("../img/bg-map-desktop@2x.jpg");
+  }
+}

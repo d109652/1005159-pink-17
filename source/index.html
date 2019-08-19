@@ -25,6 +25,12 @@
       <symbol viewBox="0 0 26.943 34.09" id="icon-htmlAcademy">
         <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
       </symbol>
+      <symbol viewBox="-82.357 4.875 21.698 16.09" id="icon-yes">
+        <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+      </symbol>
+      <symbol viewBox="0 0 26.752 26.752" id="icon-no">
+        <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+      </symbol>
     </svg>
     <div class="site-wrapper">
       <header class="page-header">
@@ -141,39 +147,106 @@
         <section class="reviews">
           <div class="reviews__wrapper slider">
             <h2 class="visually-hidden">Отзывы наших клиентов</h2>
-            <div class="reviews__list slider__list">
-              <blockquote class="reviews__item slider__item">
+            <div class="reviews__list">
+              <blockquote class="reviews__item">
                 <h3 class="reviews__auther-name">Николай Петров</h3>
                 <p class="reviews__quote">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </blockquote>
             </div>
-            <p class="reviews__toggles slider__toggles">
-              <button class="slider__toggle" type="button">1</button>
-              <button class="slider__toggle" type="button">2</button>
-              <button class="slider__toggle" type="button">3</button>
+            <p class="reviews__slider slider">
+              <a class="slider__toggle slider__toggle-current" href="#">1</a>
+              <a class="slider__toggle" href="#">2</a>
+              <a class="slider__toggle" href="#">3</a>
             </p>
           </div>
         </section>
         <section class="tariffs">
           <div class="tariffs__wrapper slider">
             <h2 class="visually-hidden">Наши цены</h2>
-            <ul class="tariffs__list slider__list">
-              <li class="tariffs__item slider__item">
-                <div class="tariffs__name-wrapper">
-                  <h3 class="tariffs__title">Стандарт</h3>
-                  <p class="tariffs__price">3,99 USD</p>
-                </div>
-                <ul class="tariffs__opportunities-list">
-                  <li class="tariffs__opportunities-item">Розовый фильтр</li>
-                  <li class="tariffs__opportunities-item">Смайлики</li>
-                  <li class="tariffs__opportunities-item">Комментарии</li>
-                </ul>
-              </li>
-            </ul>
-            <p class="tariffs__toggles slider__toggles">
-              <button class="slider__toggle" type="button">1</button>
-              <button class="slider__toggle" type="button">2</button>
-              <button class="slider__toggle" type="button">3</button>
+            <div class="tariffs__list">
+              <ul class="tariffs__price-list">
+                <li class="tariffs__price-item tariffs__price-item-text-hidden">Наши тарифы</li>
+                <li class="tariffs__price-item">
+                  <p class="tariffs__plan">База</p>
+                  <p class="tarifs__price"> 1,99 USD</p>
+                </li>
+                <li class="tariffs__price-item">
+                  <p class="tariffs__plan">Стандарт</p>
+                  <p class="tarifs__price">3,99 USD</p>
+                </li>
+                <li class="tariffs__price-item">
+                  <p class="tariffs__plan">Анлим</p>
+                  <p class="tarifs__price">9,99 USD</p>
+                </li>
+              </ul>
+              <ul class="tariffs__option-list">
+                <li class="tariffs__option-item">Розовый фильтр</li>
+                <li class="tariffs__option-item">
+                  <span class="visually-hidden">Доступно</span>
+                  <svg class="tariffs__option-svg-yes" width="21.698px" height="16.09px">
+                    <use xlink:href="#icon-yes"></use>
+                  </svg>
+                </li>
+                <li class="tariffs__option-item">
+                  <span class="visually-hidden">Доступно</span>
+                  <svg class="tariffs__option-svg-yes" width="21.698px" height="16.09px">
+                    <use xlink:href="#icon-yes"></use>
+                  </svg>
+                </li>
+                <li class="tariffs__option-item">
+                  <span class="visually-hidden">Доступно</span>
+                  <svg class="tariffs__option-svg-yes" width="21.698px" height="16.09px">
+                    <use xlink:href="#icon-yes"></use>
+                  </svg>
+                </li>
+              </ul>
+              <ul class="tariffs__option-list">
+                <li class="tariffs__option-item">Смайлики</li>
+                <li class="tariffs__option-item">
+                  <span class="visually-hidden">Не доступно</span>
+                  <svg class="tariffs__option-svg-no" width="26.752px" height="26.752px">
+                    <use xlink:href="#icon-no"></use>
+                  </svg>
+                </li>
+                <li class="tariffs__option-item">
+                  <span class="visually-hidden">Доступно</span>
+                  <svg class="tariffs__option-svg-yes" width="21.698px" height="16.09px">
+                    <use xlink:href="#icon-yes"></use>
+                  </svg>
+                </li>
+                <li class="tariffs__option-item">
+                  <span class="visually-hidden">Доступно</span>
+                  <svg class="tariffs__option-svg-yes" width="21.698px" height="16.09px">
+                    <use xlink:href="#icon-yes"></use>
+                  </svg>
+                </li>
+              </ul>
+              <ul class="tariffs__option-list">
+                <li class="tariffs__option-item">Комментарии</li>
+                <li class="tariffs__option-item">
+                  <span class="visually-hidden">Не доступно</span>
+                  <svg class="tariffs__option-svg-no" width="26.752px" height="26.752px">
+                    <use xlink:href="#icon-no"></use>
+                  </svg>
+                </li>
+                <li class="tariffs__option-item">
+                  <span class="visually-hidden">Не доступно</span>
+                  <svg class="tariffs__option-svg-no" width="26.752px" height="26.752px">
+                    <use xlink:href="#icon-no"></use>
+                  </svg>
+                </li>
+                <li class="tariffs__option-item">
+                  <span class="visually-hidden">Доступно</span>
+                  <svg class="tariffs__option-svg-yes" width="21.698px" height="16.09px">
+                    <use xlink:href="#icon-yes"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            <p class="tariffs__slider slider">
+              <a class="slider__toggle" href="#">1</a>
+              <a class="slider__toggle slider__toggle-current" href="#">2</a>
+              <a class="slider__toggle" href="#">3</a>
             </p>
           </div>
         </section>
@@ -184,11 +257,13 @@
             <p class="contacts__text">Звоните:</p>
             <p class="contacts__data">+7 (812) 555-66-66</p>
             <p class="contacts__text">Пишите:</p>
-            <p class="contacts__data">+7 (812) 555-66-66</p>
+            <p class="contacts__data">mail@htmlacademy.ru</p>
             <p class="contacts__text">Приезжайте в гости:</p>
             <p class="contacts__data">ул. Большая Конюшенная, 19/8</p>
           </div>
-          <img class="contacts__map" src="http://placehold.it/320*200" width="320" height="200" alt="как до нас добраться">
+          <div class="contacts__map">
+            <span class="contacts__address">Наш адрес</span>
+          </div>
         </section>
       </main>
       <footer class="page-footer page-footer-index">
