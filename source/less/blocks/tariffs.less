@@ -1,14 +1,22 @@
 .tariffs {
-  width: 440px;
+  width: 320px;
   margin: 0 auto;
   background-color: @gray;
-  padding-top: 100px;
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position-y: -65px;
+  background-position-x: -55px;
+  padding: 0;
+  padding-top: 90px;
+  padding-bottom: 25px;
 }
 
 .tariffs__list {
-  width: 404px;
+  position: relative;
+  width: 838px;
   display: table;
-  margin: 0 auto;
+  transform: translateX(-259px);
+  border: 1px solid @gray-border;
 }
 
 .tariffs__option-list {
@@ -17,11 +25,12 @@
 
 .tariffs__option-item {
   display: table-cell;
+  position: relative;
   padding-left: 10px;
   background-color: @white;
-  height: 45px;
-  border-left: 2px solid @gray;
-  border-bottom: 2px solid @gray;
+  height: 60px;
+  box-sizing: border-box;
+  border: 1px solid @gray-border;
 }
 
 .tariffs__price-list {
@@ -33,20 +42,19 @@
 
 .tariffs__price-item {
   display: table-cell;
-  width: 60px;
-  text-align: center;
-}
-
-.tariffs__price-item:nth-child(3) {
-  width: 280px;
+  position: relative;
+  width: 276px;
+  height: 100px;
   box-sizing: border-box;
-  border-left: 2px solid @white;
-  border-right: 2px solid @white;
+  text-align: center;
+  border: 1px solid @gray-border;
 }
 
 .tariffs__price-item-text-hidden {
   font-size: 0;
+  color: transparent;
   background-color: @gray;
+  border-top: 1ps solid transparent;
 }
 
 .tariffs__price-item-mobile-hidden {
@@ -54,7 +62,8 @@
 }
 
 .tariffs__plan {
-  font-size: 16px;
+  margin-top: 15px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 700;
 }
@@ -70,9 +79,12 @@
 .tariffs__only-mobile {
   display: inline-block;
   text-transform: uppercase;
-  margin-top: 15px;
-  margin-bottom: 12px;
-  margin-left: 10px;
+  margin-top: 14px;
+  margin-bottom: 13px;
+  margin-left: 11px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
 }
 
 .tariffs__pinkfilter-list {
@@ -80,56 +92,52 @@
 }
 
 .tariffs__pinkfilter-item {
+  position: relative;
   display: table-cell;
 }
 
-.tariffs__svg-text-container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .tariffs__option-svg-yes {
-  width: 40px;
-  height: 20px;
+  position: absolute;
+  left: 220px;
+  top: 18px;
+  width: 50px;
+  height: 22px;
   display: inline-block;
-  margin-top: 15px;
-  margin-right: 12px;
   fill: @green;
 }
 
 .tariffs__option-svg-no {
+  position: absolute;
   display: inline-block;
-  margin-top: 11px;
-  margin-right: 18px;
-  margin-bottom: 0;
+  left: 231px;
+  top: 15px;
   fill: @red;
-}
-
-.tariffs__option-svg-yes-1rmobile {
-  margin-top: 19px;
 }
 
 .tariffs__slider {
   display: block;
-  text-align: center;
-}
-
-.reviews__item {
-  display: flex;
-  flex-direction: column;
+  width: 90px;
+  margin: 0 auto;
+  margin-top: 44px;
+  padding-left: 5px;
 }
 
 @media (min-width: @tablet-width) {
   .tariffs {
     width: 660px;
     padding-top: 88px;
+    padding-bottom: 70px;
   }
   .tariffs__list {
     width: 620px;
+    margin: 0 auto;
+    transform: translateX(0);
   }
 
   .tariffs__price-item {
     width: 158px;
+    height: 80px;
+    box-sizing: border-box;
     margin-left: 0;
   }
 
@@ -139,6 +147,17 @@
 
   .tariffs__price-item-mobile-hidden {
     display: table-cell;
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 30px;
+    vertical-align: middle;
+  }
+
+  .tariffs__price-item-text-hidden {
+    color: transparent;
+    font-size: 0;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
   }
 
   .tariffs__only-mobile {
@@ -153,9 +172,78 @@
   .tariffs__plan {
     margin-top: 13px;
     margin-bottom: 12px;
+    font-size: 16px;
   }
 
   .tariffs__slider {
     display: none;
   }
+
+  .tariffs__option-item {
+    position: relative;
+    height: 45px;
+  }
+
+ .tariffs__option-svg-yes {
+   left: 55px;
+   top: 10px;
+ }
+
+ .tariffs__option-svg-no {
+   left: 62px;
+   top: 10px;
+}
+}
+
+@media (min-width: @desktop-width) {
+  .tariffs {
+    width: 1200px;
+    padding-bottom: 95px;
+  }
+
+  .tariffs__list {
+    width: 940px;
+    box-sizing: border-box;
+    margin-top: 60px;
+  }
+
+  .tariffs__price-item {
+    width: 234px;
+    height: 100px;
+    padding-left: 10px;
+  }
+
+  .tariffs__plan {
+    margin-top: 18px;
+    margin-bottom: 17px;
+    font-size: 18px;
+  }
+
+  .tarifs__price {
+    font-size: 24px;
+  }
+
+  .tariffs__price-item:nth-child(3) {
+    width: 234px;
+  }
+
+  .tariffs__price-item-mobile-hidden {
+    width: 236px;
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .tariffs__option-svg-yes {
+    left: 95px;
+    top: 20px;
+  }
+
+  .tariffs__option-svg-no {
+    left: 105px;
+    top: 15px;
+ }
 }

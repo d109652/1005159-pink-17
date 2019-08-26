@@ -1,11 +1,11 @@
 .efficiency {
   display: none;
-  padding-left: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .efficiency {
     position: relative;
+    padding-left: 20px;
     display: flex;
     width: 660px;
   }
@@ -14,7 +14,7 @@
     margin-right: 65px;
     width: 238px;
     height: 278px;
-    fill: @gray;
+    fill: #dedede;
   }
 
   .efficiency__nomber {
@@ -61,5 +61,54 @@
   .efficiency__link {
     color: @pink;
     text-decoration: underline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .efficiency {
+    width: 1200px;
+    box-sizing: border-box;
+    padding-bottom: 60px;
+    background-color: @gray;
+  }
+
+  .efficiency__image {
+    box-sizing: border-box;
+    margin-top: 25px;
+    margin-left: 100px;
+    width: 304px;
+    height: 350px;
+  }
+
+  .efficiency__nomber {
+    font-size: 120px;
+    left: 200px;
+    top: 200px;
+  }
+
+  .efficiency__nomber::after {
+    left: -55px;
+    top: -105px;
+    width: 220px;
+    height: 220px;
+    border: 15px solid @pink;
+  }
+
+  .efficiency__title {
+    width: 310px;
+    margin-top: 100px;
+    margin-bottom: 22px;
+  }
+
+  .efficiency__text {
+    width: 505px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .efficiency__link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

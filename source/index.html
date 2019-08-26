@@ -69,7 +69,7 @@
             </g>
           </svg>
         </a>
-        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <nav class="page-header__navigation main-nav main-nav--opened main-nav--nojs">
           <div class="opacity-box"></div>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">открыть/закрыть меню</span>
@@ -83,8 +83,9 @@
         </nav>
       </header>
       <main class="page-index">
-        <div class="title-wrapper title-wrapper-index">
-          <h1 class="page-index__title">Взгляните на жизнь иначе!</h1>
+        <h1 class="visually-hidden">Взгляните на жизнь иначе c Pink!</h1>
+        <section class="page-index__title-wrapper title-wrapper title-wrapper-index">
+          <h1 class="title-wrapper__title-index">Взгляните на жизнь иначе!</h1>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
@@ -93,26 +94,26 @@
             <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x" width="470">
             <img class="download__photo" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" width="257" height="288" alt="фотография открытого приложения">
           </picture>
-        </div>
-        <section class="download">
+        </section>
+        <section class="page-index__download download">
           <h2 class="visually-hidden">о скачивании приложения</h2>
           <a class="download__button" href="#">Скачать приложение</a>
           <ul class="download__list">
             <li class="download__item download__item--iOS">
               <a href="#">
                 <span class="visually-hidden">OS X</span>
-                <img src="img/logo-apple.svg" width="49" height="58" alt="логотип apple">
+                <img src="img/logo-apple.svg" width="49" height="56" alt="логотип apple">
               </a>
             </li>
             <li class="download__item download__item--Android">
               <a href="#">
                 <span class="visually-hidden">Android</span>
-                <img src="img/logo-android.svg" width="45" height="50" alt="логотип android">
+                <img src="img/logo-android.svg" width="43" height="48" alt="логотип android">
               </a>
             </li>
             <li class="download__item download__item--Windows">
               <a href="#">
-                <img src="img/logo-microsoft.svg" width="46" height="43" alt="логотип Microsoft">
+                <img src="img/logo-microsoft.svg" width="46" height="41" alt="логотип Microsoft">
               </a>
             </li>
           </ul>
@@ -153,7 +154,7 @@
           </svg>
           <span class="efficiency__nomber">24</span>
           <div class="efficiency-text-container">
-            <h2 class="efficiency__title">Эффект<br>на 24 часа!</h2>
+            <h2 class="efficiency__title">Эффект на 24 часа!</h2>
             <p class="efficiency__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a class="efficiency__link" href="#">Узнать больше об исследовании</a>
           </div>
@@ -161,10 +162,9 @@
         <section class="page-index__reviews reviews">
           <div class="reviews__wrapper slider">
             <h2 class="visually-hidden">Отзывы наших клиентов</h2>
-
             <div class="reviews__list">
               <div class="reviews__item">
-                <div class="reviews__auther-contaiber">
+                <div class="reviews__auther-container">
                   <h3 class="reviews__auther-name">Николай Петров</h3>
                   <span class="reviews-text-mobile-hidden">25 лет, водитель трамвая</span>
                 </div>
@@ -178,7 +178,7 @@
             </p>
           </div>
         </section>
-        <section class="tariffs">
+        <section class="page-index__tariffs tariffs">
           <div class="tariffs__wrapper slider">
             <h2 class="visually-hidden">Наши цены</h2>
             <div class="tariffs__list">
@@ -209,7 +209,7 @@
                   <div class="tariffs__svg-text-container">
                     <span class="tariffs__only-mobile">Розовый фильтр</span>
                     <span class="visually-hidden">Доступно</span>
-                    <svg class="tariffs__option-svg-yes tariffs__option-svg-yes-1rmobile" width="21.698px" height="16.09px">
+                    <svg class="tariffs__option-svg-yes" width="21.698px" height="16.09px">
                       <use xlink:href="#icon-yes"></use>
                     </svg>
                   </div>
@@ -233,7 +233,7 @@
                   <div class="tariffs__svg-text-container">
                     <span class="tariffs__only-mobile">Смайлики</span>
                     <span class="visually-hidden">Доступно</span>
-                    <svg class="tariffs__option-svg-yes tariffs__option-svg-yes-2rmobile" width="21.698px" height="16.09px">
+                    <svg class="tariffs__option-svg-yes" width="21.698px" height="16.09px">
                       <use xlink:href="#icon-yes"></use>
                     </svg>
                   </div>
@@ -254,13 +254,11 @@
                   </svg>
                 </li>
                 <li class="tariffs__option-item">
-                  <div class="tariffs__svg-text-container">
-                    <span class="tariffs__only-mobile">Комментарии</span>
-                    <span class="visually-hidden">Не доступно</span>
-                    <svg class="tariffs__option-svg-no tariffs__option-svg-no-3rmobile" width="26.752px" height="26.752px">
-                      <use xlink:href="#icon-no"></use>
-                    </svg>
-                  </div>
+                  <span class="tariffs__only-mobile">Комментарии</span>
+                  <span class="visually-hidden">Не доступно</span>
+                  <svg class="tariffs__option-svg-no" width="26.752px" height="26.752px">
+                    <use xlink:href="#icon-no"></use>
+                  </svg>
                 </li>
                 <li class="tariffs__option-item">
                   <span class="visually-hidden">Доступно</span>
@@ -277,19 +275,25 @@
             </p>
           </div>
         </section>
-        <section class="contacts">
+        <section class="page-index__contacts contacts">
           <h2 class="visually-hidden">Наши контакты</h2>
           <p class="contacts__tagline">Остались вопросы? Свяжитесь с нами!</p>
           <div class="contacts__wrapper">
-            <p class="contacts__text">Звоните:</p>
-            <p class="contacts__data">+7 (812) 555-66-66</p>
-            <p class="contacts__text">Пишите:</p>
-            <p class="contacts__data">mail@htmlacademy.ru</p>
-            <p class="contacts__text">Приезжайте в гости:</p>
-            <p class="contacts__data">ул. Большая Конюшенная, 19/8</p>
+            <div class="contacts__phone-wrapper">
+              <p class="contacts__text">Звоните:</p>
+              <p class="contacts__data">+7 (812) 555-66-66</p>
+            </div>
+            <div class="contacts__mail-wrapper">
+              <p class="contacts__text">Пишите:</p>
+              <p class="contacts__data">mail@htmlacademy.ru</p>
+            </div>
+            <div class="contacts__address-wrapper">
+              <p class="contacts__text">Приезжайте в гости:</p>
+              <p class="contacts__data">ул. Большая Конюшенная, 19/8</p>
+            </div>
           </div>
           <div class="contacts__map">
-            <span class="contacts__address">Наш адрес</span>
+            <span class="contacts__map-mark">Наш адрес</span>
           </div>
         </section>
       </main>
