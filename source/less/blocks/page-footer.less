@@ -26,38 +26,89 @@
 
 .page-footer__social-list {
   .list-decoration-none;
+  position: relative;
   width: 180px;
   margin: 0 auto;
   margin-bottom: 40px;
-  margin-top: -9px;
+  margin-top: -6px;
   display: flex;
 }
 
 .page-footer__social-item {
-  padding: 8px 15px;
-  border: 2px solid #e9ebec;
-  border-radius: 50%;
+  padding: 7px 14px;
+}
 
-  &:hover {
-    border: 2px solid @bg-navy;
+.page-footer__social-item-tw {
+  position: relative;
+  margin-left: 2px;
+
+  &:hover::after {
+    border: 3px solid @bg-navy;
   }
 
-  &:active .page-footer__social-svg {
+  &:active::after {
     opacity: 0.3;
   }
 }
 
-.page-footer__social-item-tw {
-  margin-left: 2px;
+.page-footer__social-item-tw::after {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: -2px;
+  width: 45px;
+  height: 45px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
 }
 
 .page-footer__social-item-fb {
-  margin-left: 14px;
-  padding: 8px 20px;
+  position: relative;
+  margin-left: 18px;
+
+  &:hover::after {
+    border: 3px solid @bg-navy;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__social-item-fb::after {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: -2px;
+  width: 45px;
+  height: 45px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
 }
 
 .page-footer__social-item-yb {
-  margin-left: 14px;
+  position: relative;
+  margin-left: 20px;
+  margin-top: -2px;
+
+  &:hover::after {
+    border: 3px solid @bg-navy;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__social-item-yb::after {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: -2px;
+  width: 45px;
+  height: 45px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
 }
 
 .page-footer__social-svg {
@@ -105,16 +156,23 @@
     justify-content: space-between;
   }
 
+  .page-footer__logo {
+    margin-top: -1px;
+    margin-left: 1px;
+  }
+
   .page-footer__social-list {
     margin-top: 7px;
   }
 
   .page-footer__social-item-tw {
-    margin-left: 0;
+    margin-left: 0px;
+    margin-top: 2px;
   }
 
   .page-footer__social-item-fb {
-    margin-left: 10px;
+    margin-left: 19px;
+    margin-top: 2px;
   }
 
   .page-footer__copyright {

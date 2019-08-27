@@ -125,8 +125,10 @@
 @media (min-width: @tablet-width) {
   .tariffs {
     width: 660px;
-    padding-top: 88px;
-    padding-bottom: 70px;
+    padding-top: 65px;
+    padding-bottom: 69px;
+    background-position-y: -70px;
+    background-position-x: 0px;
   }
 
   .tariffs__list {
@@ -136,21 +138,25 @@
   }
 
   .tariffs__price-item {
-    width: 158px;
+    width: 154px;
     height: 80px;
     box-sizing: border-box;
     margin-left: 0;
   }
 
   .tariffs__price-item:nth-child(3) {
-    width: 158px;
+    width: 154px;
   }
 
   .tariffs__price-item-mobile-hidden {
     display: table-cell;
+    width: 154px;
     padding-left: 15px;
+    padding-bottom: 8px;
+    padding-top: 5px;
     font-size: 14px;
     line-height: 30px;
+    font-weight: 500;
     vertical-align: middle;
   }
 
@@ -182,7 +188,7 @@
 
   .tariffs__option-item {
     position: relative;
-    height: 45px;
+    height: 46px;
   }
 
   .tariffs__option-svg-yes {
@@ -193,6 +199,13 @@
   .tariffs__option-svg-no {
     left: 62px;
     top: 10px;
+  }
+
+  .tariffs__price-item-text-hidden {
+    font-size: 0;
+    color: transparent;
+    background-color: @gray;
+    border-top: 1px solid transparent;
   }
 }
 
