@@ -5,9 +5,17 @@
   text-align: center;
 }
 
+.photo-tape__text-container {
+  margin-top: 45px;
+  margin-bottom: 49px;
+}
+
 .photo-tape__text--top {
-  margin-top: 48px;
-  margin-bottom: 47px;
+  width: 260px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+  color: @bg-navy;
 }
 
 .photo-tape__text--bottom {
@@ -28,17 +36,37 @@
 }
 
 .photo-tape__item-view {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
 
+.photo-tape__item-view::after {
+  position: absolute;
+  top: 0;
+  left: 160px;
+  content: "ПАНОРАМА ДНЯ";
+  width: 140px;
+  height: 36px;
+  box-sizing: border-box;
+  background-color: @pink;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  color: @white;
+  text-align: center;
+  padding-top: 6px;
+}
+
 .photo-tape__information-wrapper {
+  position: relative;
   width: 280px;
   box-sizing: border-box;
   margin: 0 auto;
   margin-top: -10px;
   padding: 20px 20px;
+  padding-left: 18px;
   padding-top: 15px;
   background-color: @gray;
 }
@@ -77,26 +105,58 @@
   font-weight: 500;
 }
 
+.photo-tape__comment-drumset {
+  margin-bottom: 12px;
+}
+
+.photo-tape__comment-window {
+  margin-bottom: 11px;
+}
+
 .photo-tape__likes {
   margin: 0;
-  margin-left: 30px;
+  margin-left: 32px;
+  margin-top: -1px;
   padding: 0;
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
   color: @pink;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.photo-tape__likes-svg {
+  position: absolute;
+  fill: @pink;
+  bottom: 25px;
 }
 
 .photo-tape__likes-view {
+  position: relative;
   margin: 0;
-  margin-left: 30px;
+  margin-left: 32px;
   padding: 0;
   font-size: 12px;
   line-height: 24px;
+  font-weight: 500;
   text-transform: uppercase;
   color: @pink;
 }
-
+/*
+.photo-tape__likes-view::after {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 13px;
+  left: -32px;
+  top: 6px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+*/
 @media (min-width: @tablet-width) {
   .photo-tape__text {
     width: 448px;

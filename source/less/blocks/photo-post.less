@@ -93,12 +93,32 @@
   color: @pink;
   border: 3px solid @pink;
   background-color: @gray;
+
+  &:hover {
+    background-color: @pink;
+    color: @white;
+  }
+
+  &:active {
+    background-color: @pink;
+    color: #e08195;
+  }
 }
 
 .photo-post__button-cansel {
   color: #dddfe0;
   border: 3px solid #dddfe0;
   background-color: @gray;
+
+  &:hover {
+    border: 3px solid #b5b9be;
+    color: #d1d3d4;
+  }
+
+  &:active {
+    background-color: #b5b9be;
+    color: #cdd0d3;
+  }
 }
 
 @media (min-width: @tablet-width) {

@@ -68,6 +68,30 @@
   font-weight: 700;
 }
 
+.tariffs__price-item-standart::before{
+  position: absolute;
+  content: "";
+  width: 75px;
+  height: 75px;
+  top: 0;
+  left: -2px;
+  background-image: url("../../img/bg-hit.svg");
+  background-repeat: no-repeat;
+}
+
+.tariffs__price-item-standart::after{
+  position: absolute;
+  content: "ХИТ";
+  transform: rotate(-45deg);
+  width: 75px;
+  height: 75px;
+  top: 4px;
+  left: 0px;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+
 .tarifs__price {
   margin-top: -15px;
   margin-bottom: -8px;
@@ -146,6 +170,20 @@
 
   .tariffs__price-item:nth-child(3) {
     width: 154px;
+  }
+
+  .tariffs__price-item-standart::before{
+    background-image: url("../../img/bg-hit-tablet.svg");
+  }
+
+
+ .tariffs__price-item-standart::after {
+    width: 75px;
+    height: 75px;
+    top: -3px;
+    left: 0px;
+    font-size: 14px;
+    line-height: 30px;
   }
 
   .tariffs__price-item-mobile-hidden {
