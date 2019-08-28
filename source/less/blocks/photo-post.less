@@ -156,9 +156,9 @@
 @media (min-width: @tablet-width) {
   .photo-post {
     display: flex;
-    padding-top: 58px;
-    padding-left: 21px;
-    padding-bottom: 5px;
+    padding-top: 57px;
+    padding-left: 20px;
+    padding-bottom: 8px;
   }
 
   .photo-post__image {
@@ -181,7 +181,8 @@
 
   .photo-post__scale::after {
     width: 276px;
-    bottom: -23px;
+    bottom: -22px;
+    left: -65px;
   }
 
   .photo-post__control-fill {
@@ -195,6 +196,15 @@
   .photo-post__scale {
     position: static;
     width: 202px;
+    margin-left: -10px;
+  }
+
+  .photo-post__range-toggle {
+    left: 136px;
+  }
+
+  .photo-post__range-toggle-scale {
+    left: 14px;
   }
 
   .photo-post__item {
@@ -216,9 +226,21 @@
     fill: @pink;
   }
 
+  .photo-post__svg-crop {
+    margin-left: -4px;
+    margin-top: 0px;
+  }
+
+  .photo-post__svg-fill {
+    margin-top: 1px;
+    margin-left: -4px;
+    width: 24px;
+    height: 24px;
+  }
+
   .photo-post__svg-contrast {
-    margin-top: 2px;
-    margin-left: 4px;
+    margin-top: 4px;
+    margin-left: 2px;
     width: 16px;
     height: 16px;
   }

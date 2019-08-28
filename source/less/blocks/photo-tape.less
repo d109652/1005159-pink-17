@@ -26,6 +26,10 @@
   font-weight: 500;
 }
 
+.photo-tape__text-nomobile {
+  display: none;
+}
+
 .photo-tape__list {
   .list-decoration-none;
   display: flex;
@@ -169,8 +173,18 @@
     font-size: 18px;
   }
 
+  .photo-tape__text-container {
+    display: none;
+  }
+
   .photo-tape__text--bottom {
-    margin-top: 48px;
+    margin-top: 45px;
+  }
+
+  .photo-tape__text-nomobile {
+    display: block;
+    margin-top: 92px;
+    margin-bottom: 76px;
   }
 
   .photo-tape__list {
@@ -187,13 +201,18 @@
   }
 
   .photo-tape__image {
-    width: 302px;
-    height: 302px;
+    width: 300px;
+    height: 300px;
   }
 
   .photo-tape__item-view {
     width: 660px;
     margin-bottom: 50px;
+  }
+
+  .photo-tape__item-view::after {
+    left: 500px;
+    top: 57px;
   }
 
   .photo-tape__image-view {
@@ -205,9 +224,9 @@
     position: relative;
     width: 300px;
     margin-top: -10px;
-    padding-left: 30px;
-    padding-top: 20px;
-    min-height: 152px;
+    padding-left: 28px;
+    padding-top: 21px;
+    min-height: 155px;
   }
 
   .photo-tape__information-wrapper-view {
@@ -217,21 +236,31 @@
     margin: 0 auto;
     margin-top: -10px;
     box-sizing: border-box;
-    padding-top: 20px;
+    padding-top: 21px;
     padding-bottom: 15px;
-    padding-left: 30px;
+    padding-left: 28px;
   }
 
   .photo-tape__likes {
     position: absolute;
-    bottom: 20px;
-    left: 0;
+    bottom: 22px;
+    left: -4px;
   }
 
   .photo-tape__likes-view {
     position: absolute;
-    top: 25px;
-    right: 60px;
+    top: 26px;
+    right: 58px;
+  }
+
+  .photo-tape__likes-view-svg {
+    top: 30px;
+    right: 29px;
+  }
+
+  .photo-tape__likes-svg {
+    right: 32px;
+    bottom: 28px;
   }
 }
 
