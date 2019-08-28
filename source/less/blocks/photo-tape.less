@@ -1,7 +1,5 @@
 .photo-tape__text {
-  width: 240px;
   margin: 0 auto;
-
   text-align: center;
 }
 
@@ -19,8 +17,13 @@
 }
 
 .photo-tape__text--bottom {
-  margin-top: 18px;
+  width: 280px;
+  margin-top: 20px;
   margin-bottom: 60px;
+  padding-right: 2px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
 }
 
 .photo-tape__list {
@@ -113,6 +116,18 @@
   margin-bottom: 11px;
 }
 
+.photo-tape__comment-fair {
+  margin-bottom: 12px;
+}
+
+.photo-tape__comment-pov {
+  margin-bottom: 12px;
+}
+
+.photo-tape__comment-wing {
+  margin-bottom: 12px;
+}
+
 .photo-tape__likes {
   margin: 0;
   margin-left: 32px;
@@ -144,19 +159,7 @@
   text-transform: uppercase;
   color: @pink;
 }
-/*
-.photo-tape__likes-view::after {
-  position: absolute;
-  content: "";
-  width: 13px;
-  height: 13px;
-  left: -32px;
-  top: 6px;
-  background-image: url("../img/icon-heart.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-*/
+
 @media (min-width: @tablet-width) {
   .photo-tape__text {
     width: 448px;

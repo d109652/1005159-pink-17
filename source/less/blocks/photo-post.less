@@ -1,11 +1,13 @@
 .photo-post {
   background-color: @gray;
   padding-top: 20px;
+  padding-bottom: 4px;
 }
 
 .photo-post__image {
   display: block;
   margin: 0 auto;
+  padding-right: 3px;
 }
 
 .photo-post__list {
@@ -36,6 +38,16 @@
   }
 }
 
+.photo-post__svg-crop {
+  margin-left: 5px;
+  margin-top: -2px;
+  fill: @pink;
+}
+
+.photo-post__svg-fill {
+  margin-left: -2px;
+}
+
 .photo-post__control {
   position: relative;
   margin: 0 auto;
@@ -54,10 +66,26 @@
 
 .photo-post__scale {
   position: absolute;
-  left: -10px;
+  left: -11px;
   width: 240px;
   height: 2px;
   background-color: @bg-navy;
+}
+
+.photo-post__range-toggle {
+  position: absolute;
+  top: -6px;
+  left: 182px;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 2px solid @pink;
+  border-radius: 50%;
+  background-color: @white;
+
+  &:hover {
+    background-color: @pink;
+  }
 }
 
 .photo-post__scale::after {
@@ -77,19 +105,23 @@
 
 .photo-post__button {
   display: block;
-  width: 280px;
+  width: 281px;
   box-sizing: border-box;
   margin: 0 auto;
   margin-bottom: 12px;
-  padding-top: 16px;
+  padding-top: 15px;
   padding-bottom: 16px;
+  text-align: center;
+  padding-right: 6px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   border-radius: 50px;
+  text-align: center;
 }
 
 .photo-post__button-post {
+  margin-top: -1px;
   color: @pink;
   border: 3px solid @pink;
   background-color: @gray;
@@ -223,7 +255,7 @@
   }
 
   .photo-post__svg-fill {
-    margin-top: -11px;
+    margin-top: -10px;
     margin-left: 2px;
   }
 
