@@ -32,11 +32,11 @@
   width: 230px;
   margin: 0 auto;
   padding: 0;
-  padding-top: 100px;
-  padding-bottom: 55px;
+  padding-top: 99px;
+  padding-bottom: 54px;
   text-align: center;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 29px;
   font-weight: 400;
   color: @white;
 }
@@ -55,6 +55,8 @@
 
 @media (min-width: @tablet-width) {
   .title-wrapper {
+    position: relative;
+    z-index: -1;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position-y: -1px;
 
@@ -62,11 +64,6 @@
       background-image: url("../img/bg-back-tablet@2x.jpg");
       background-position-x: -270px;
     }
-  }
-
-  .title-wrapper-index {
-    position: relative;
-    z-index: -1;
   }
 
   .title-wrapper__title-index {
