@@ -81,10 +81,11 @@
         <div class="title-wrapper title-wrapper-form">
           <h1 class="page-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
-        <p class="page-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="page-form__text-mob-hidden"> Пожалуйста, заполните форму ниже:</span></p>
+        <p class="page-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="page-form__text-mob-hidden"> Пожалуйста, заполните форму ниже:</span></p>
         <div class="page-form__block-container">
         <section class="page-form__personal personal-data">
         <div class="site-wrapper">
+
           <h2 class="visually-hidden">Ввод персональных данных</h2>
           <form class="personal-data__form" action="https://echo.htmlacademy.ru" method="post">
             <label class="personal-data__label">
@@ -101,9 +102,11 @@
             </label>
           </form>
         </div>
+
         </section>
         <section class="page-form__achievments personal-achievements">
         <div class="site-wrapper">
+        <div class="personal-achievements__maincontainer">
           <h2 class="visually-hidden">Ваши безбашенные достижения</h2>
           <form class="personal-achievements__form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="personal-achievements__field">
@@ -143,9 +146,11 @@
             </fieldset>
           </form>
         </div>
+        </div>
         </section>
         <section class="page-form__contacts user-contacts">
         <div class="site-wrapper">
+        <div class="user-contacts__maincontainer">
           <h2 class="visually-hidden">Ваши контакты</h2>
           <form class="user-contacts__form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="user-contacts__field">
@@ -153,19 +158,21 @@
               <div class="user-contacts__container">
               <label class="user-contacts__label">
                   Номер телефона
-                  <input class="user-contacts__input" type="text" name="user-phone" placeholder="Номер, пожалуйста">
+                  <input class="user-contacts__input" type="tel" name="user-phone" placeholder="Номер, пожалуйста">
                 </label>
                 <label class="user-contacts__label">
                   Адрес почты
-                  <input class="user-contacts__input" type="text" name="user-mail" placeholder="Введите почту *">
+                  <input class="user-contacts__input" type="email" name="user-mail" placeholder="Введите почту *">
               </label>
               </div>
             </fieldset>
           </form>
         </div>
+        </div>
         </section>
         <section class="page-form__apps travel-apps">
         <div class="site-wrapper">
+        <div class="travel-apps__container">
           <h2 class="visually-hidden">Ваши приложения для путешествий</h2>
           <form class="travel-apps__form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="travel-apps__field">
@@ -188,9 +195,11 @@
             </fieldset>
           </form>
         </div>
+        </div>
         </section>
         <section class="page-form__impressions user-impressions">
         <div class="site-wrapper">
+        <div class="user-impressions__container">
           <h2 class="visually-hidden">Поделитесь своими эмоциями от путешствия</h2>
           <form class="user-impressions__form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="user-impressions__field">
@@ -199,11 +208,14 @@
             </fieldset>
           </form>
         </div>
+        </div>
         </section>
         </div>
+        <div class="site-wrapper">
         <div class="page-form__button-container">
         <button class="page-form__button" type="button">Отправить форму</button>
         <p class="page-form__footnote"><span class="page-form__footnote-star">*</span> — обязательные <span class="page-form__footnote-mob-hidden">для заполнения</span> поля</p>
+        </div>
         </div>
       </main>
       <footer class="page-footer">

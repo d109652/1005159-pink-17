@@ -62,13 +62,17 @@
 
 @media (min-width: @tablet-width) {
   .travel-apps {
-    width: 620px;
     background-color: @white;
+  }
+
+  .travel-apps__container {
+    width: 625px;
+    margin-left: 16px;
   }
 
   .travel-apps__field {
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 18px;
     border: 2px solid @gray-border;
     border-radius: 2px;
   }
@@ -89,8 +93,22 @@
 
 @media (min-width: @desktop-width) {
   .travel-apps {
-    width: 438px;
+    width: 439px;
     box-sizing: border-box;
+  }
+
+  .travel-apps__container {
+    width: 439px;
+    box-sizing: border-box;
+    margin-left: 20px;
+  }
+
+  .travel-apps__field {
+    padding-bottom: 20px;
+  }
+
+  .travel-apps__legend {
+    padding-top: 1px;
   }
 
   .travel-apps__label {
