@@ -47,8 +47,10 @@
         <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
       </symbol>
     </svg>
-    <div class="site-wrapper">
+
       <header class="page-header">
+      <div class="site-wrapper">
+      <div class="page-header__container">
         <a class="page-header__logo" href="index.html">
           <svg class="page-header__logo-image" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <g class="page-header__logo-image-text">
@@ -93,12 +95,15 @@
             <li class="site-list__item"><a href="#">HTML Academy</a></li>
           </ul>
         </nav>
+      </div>
+      </div>
       </header>
       <main class="page-photo">
         <div class="title-wrapper title-wrapper-photo">
           <h1 class="page-photo__title">Фотографии пользователей</h1>
         </div>
         <section class="page-photo__tape photo-tape">
+        <div class="site-wrapper">
           <h2 class="visually-hidden">Лента фотографий</h2>
           <div class="photo-tape__text-container">
             <p class="photo-tape__text photo-tape__text--top">Взгляните на фотографии, которые выкладывают пользователи!</p>
@@ -243,8 +248,11 @@
             </ul>
           </div>
           <p class="photo-tape__text photo-tape__text--bottom">Затмите их всех!</br>Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
         </section>
         <section class="page-photo__post photo-post">
+        <div class="site-wrapper">
+        <div class="photo-post__container">
           <h2 class="visually-hidden">Запостите свою фотографию</h2>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
@@ -292,9 +300,13 @@
               <button class="photo-post__button photo-post__button-cansel" type="button">Отмена</button>
             </div>
           </div>
+        </div>
+        </div>
         </section>
       </main>
       <footer class="page-footer">
+      <div class="site-wrapper">
+      <div class="page-footer__container">
         <a class="page-footer__logo" href="#">
           <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <g class="page-footer__logo-image-text">
@@ -355,14 +367,16 @@
         </ul>
         <div class="page-footer__copyright">
           <p class="page-footer__copyright-text">Разработано</p>
-          <a class="page-footer__copyright-logo" href="#">
+          <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="page-footer__copyright-svg" width="26.943px" height="34.09px">
               <use xlink:href="#icon-htmlAcademy"></use>
             </svg>
           </a>
         </div>
+      </div>
+      </div>
       </footer>
-    </div>
+
     <script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');

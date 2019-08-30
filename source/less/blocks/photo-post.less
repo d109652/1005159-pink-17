@@ -111,7 +111,6 @@
   margin-bottom: 12px;
   padding-top: 15px;
   padding-bottom: 16px;
-  text-align: center;
   padding-right: 6px;
   font-size: 18px;
   line-height: 18px;
@@ -155,10 +154,13 @@
 
 @media (min-width: @tablet-width) {
   .photo-post {
-    display: flex;
     padding-top: 57px;
     padding-left: 20px;
     padding-bottom: 8px;
+  }
+
+  .photo-post__container {
+    display: flex;
   }
 
   .photo-post__image {
@@ -228,7 +230,7 @@
 
   .photo-post__svg-crop {
     margin-left: -4px;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .photo-post__svg-fill {
@@ -254,12 +256,15 @@
 
 @media (min-width: @desktop-width) {
   .photo-post {
-    width: 940px;
-    box-sizing: border-box;
-    margin: 0 auto;
     padding-left: 80px;
     padding-top: 57px;
     padding-bottom: 7px;
+  }
+
+  .photo-post__container {
+    width: 940px;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
 
   .photo-post__list {

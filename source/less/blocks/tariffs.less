@@ -68,7 +68,7 @@
   font-weight: 700;
 }
 
-.tariffs__price-item-standart::before{
+.tariffs__price-item-standart::before {
   position: absolute;
   content: "";
   width: 75px;
@@ -79,20 +79,19 @@
   background-repeat: no-repeat;
 }
 
-.tariffs__price-item-standart::after{
+.tariffs__price-item-standart::after {
   position: absolute;
   content: "ХИТ";
   transform: rotate(-45deg);
   width: 75px;
   height: 75px;
   top: 4px;
-  left: 0px;
+  left: 0;
   font-size: 14px;
   line-height: 30px;
 }
 
-
-.tarifs__price {
+.tariffs__price {
   margin-top: -15px;
   margin-bottom: -8px;
   font-size: 24px;
@@ -152,7 +151,7 @@
     padding-top: 65px;
     padding-bottom: 69px;
     background-position-y: -70px;
-    background-position-x: 0px;
+    background-position-x: 0;
   }
 
   .tariffs__list {
@@ -172,16 +171,15 @@
     width: 154px;
   }
 
-  .tariffs__price-item-standart::before{
+  .tariffs__price-item-standart::before {
     background-image: url("../../img/bg-hit-tablet.svg");
   }
 
-
- .tariffs__price-item-standart::after {
+  .tariffs__price-item-standart::after {
     width: 75px;
     height: 75px;
     top: -3px;
-    left: 0px;
+    left: 0;
     font-size: 14px;
     line-height: 30px;
   }
@@ -198,18 +196,11 @@
     vertical-align: middle;
   }
 
-  .tariffs__price-item-text-hidden {
-    color: transparent;
-    font-size: 0;
-    border-top: 1px solid transparent;
-    border-left: 1px solid transparent;
-  }
-
   .tariffs__only-mobile {
     display: none;
   }
 
-  .tarifs__price {
+  .tariffs__price {
     font-size: 18px;
     margin-bottom: 10px;
   }
@@ -244,6 +235,7 @@
     color: transparent;
     background-color: @gray;
     border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
   }
 }
 
@@ -271,7 +263,7 @@
     font-size: 18px;
   }
 
-  .tarifs__price {
+  .tariffs__price {
     font-size: 24px;
   }
 
