@@ -73,12 +73,22 @@
   }
 
   .efficiency__link {
+    position: relative;
     color: @pink;
     margin-left: 3px;
     font-size: 14px;
     line-height: 24px;
     font-weight: 500;
-    border-bottom: 1px solid @pink;
+  }
+
+  .efficiency__link::after {
+    position: absolute;
+    top: 17px;
+    left: 0;
+    content: "";
+    width: 225px;
+    height: 1px;
+    background-color: @pink;
   }
 }
 
