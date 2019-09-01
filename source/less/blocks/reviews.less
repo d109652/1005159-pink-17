@@ -103,21 +103,56 @@
 
 @media (min-width: @desktop-width) {
   .reviews {
-    width: 1200px;
+    padding-top: 15px;
   }
-
 
   .reviews__slider {
     display: none;
   }
 
   .reviews__quote {
+    position: relative;
     width: 700px;
-    margin: 0 auto;
+    margin-left: 235px;
   }
 
+  .reviews__quote::before {
+    position: absolute;
+    left: -120px;
+    top: 27px;
+    content: "";
+    width: 28px;
+    height: 46px;
+    background-image: url("../../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+  }
+
+  .reviews__quote::after {
+    position: absolute;
+    right: -125px;
+    top: 27px;
+    content: "";
+    width: 28px;
+    height: 46px;
+    background-image: url("../../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+  }
+
+
   .reviews__auther-container {
-    margin-top: 18px;
+    position: relative;
+    margin-top: 0;
+  }
+
+  .reviews__auther-container::before {
+    position: absolute;
+    left: 90px;
+    top: -222px;
+    content: "";
+    width: 80px;
+    height: 65px;
+    background-image: url("../../img/icon-quotes.svg");
+    background-repeat: no-repeat;
   }
 
   .reviews__auther-name {

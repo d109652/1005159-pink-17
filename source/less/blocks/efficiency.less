@@ -19,7 +19,7 @@
     margin-top: 3px;
     width: 239px;
     height: 278px;
-    fill: #dedede;
+    fill: @gray-alarm;
   }
 
   .efficiency__nomber {
@@ -63,6 +63,10 @@
     color: @black;
   }
 
+  .efficiency__title-desktop {
+    display: none;
+  }
+
   .efficiency__text {
     width: 300px;
     margin-bottom: 7px;
@@ -94,42 +98,56 @@
 
 @media (min-width: @desktop-width) {
   .efficiency {
-    width: 1200px;
-    box-sizing: border-box;
     padding-bottom: 60px;
     background-color: @gray;
+    padding-bottom: 112px;
   }
 
   .efficiency__image {
-    box-sizing: border-box;
-    margin-top: 25px;
-    margin-left: 100px;
+    position: absolute;
     width: 304px;
-    height: 350px;
+    height: 345px;
+    top: 3px;
+    left: 127px;
+    fill: @gray-alarm;
+  }
+
+  .efficiency-text-container {
+    margin-left: 473px;
   }
 
   .efficiency__nomber {
     font-size: 120px;
-    left: 200px;
-    top: 200px;
+    left: 210px;
+    top: 181px;
   }
 
   .efficiency__nomber::after {
-    left: -55px;
+    left: -57px;
     top: -105px;
     width: 220px;
     height: 220px;
-    border: 15px solid @pink;
+    border: 16px solid @pink;
   }
 
   .efficiency__title {
+    display: none;
+  }
+
+  .efficiency__title-desktop {
+    display: block;
     width: 310px;
-    margin-top: 100px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: @black;
+    margin-top: 82px;
     margin-bottom: 22px;
   }
 
   .efficiency__text {
-    width: 505px;
+    width: 525px;
+    margin-top: 25px;
     margin-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
@@ -138,5 +156,11 @@
   .efficiency__link {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .efficiency__link::after {
+    top: 22px;
+    left: 0;
+    width: 290px;
   }
 }
