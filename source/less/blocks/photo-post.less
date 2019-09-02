@@ -105,22 +105,22 @@
 
 .photo-post__button {
   display: block;
-  width: 281px;
+  width: 280px;
   box-sizing: border-box;
   margin: 0 auto;
   margin-bottom: 12px;
   padding-top: 15px;
   padding-bottom: 16px;
-  padding-right: 6px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   border-radius: 50px;
-  text-align: center;
 }
 
 .photo-post__button-post {
   margin-top: -1px;
+  margin-left: 18px;
+  padding-left: 2px;
   color: @pink;
   border: 3px solid @pink;
   background-color: @gray;
@@ -156,11 +156,12 @@
   .photo-post {
     padding-top: 57px;
     padding-left: 20px;
-    padding-bottom: 8px;
+    padding-bottom: 5px;
   }
 
   .photo-post__container {
     display: flex;
+    margin-left: 10px;
   }
 
   .photo-post__image {
@@ -209,6 +210,10 @@
     left: 14px;
   }
 
+  .photo-post__range-toggle-contrast {
+    left: 87px;
+  }
+
   .photo-post__item {
     display: flex;
     margin: 0;
@@ -247,6 +252,11 @@
     height: 16px;
   }
 
+  .photo-post__buttons-container {
+    margin-top: 3px;
+    margin-left: -3px;
+  }
+
   .photo-post__button {
     width: 260px;
     margin-left: 48px;
@@ -265,6 +275,7 @@
     width: 940px;
     box-sizing: border-box;
     margin: 0 auto;
+    margin-left: 145px;
   }
 
   .photo-post__list {
@@ -282,13 +293,13 @@
   }
 
   .photo-post__svg-fill {
-    margin-top: -10px;
-    margin-left: 2px;
+    margin-top: -11px;
+    margin-left: -1px;
   }
 
   .photo-post__svg-contrast {
     margin-top: -4px;
-    margin-left: 9px;
+    margin-left: 5px;
     margin-right: 23px;
     width: 32px;
     height: 32px;
@@ -296,6 +307,7 @@
 
   .photo-post__scale {
     width: 288px;
+    margin-left: -6px;
   }
 
   .photo-post__scale::after {
@@ -315,5 +327,17 @@
 
   .photo-post__button {
     width: 184px;
+  }
+
+  .photo-post__range-toggle {
+    left: 65px;
+  }
+
+  .photo-post__range-toggle-scale {
+    left: 238px;
+  }
+
+  .photo-post__range-toggle-contrast {
+    left: 152px;
   }
 }
