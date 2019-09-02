@@ -1,0 +1,117 @@
+.travel-apps {
+  background-color: @gray;
+}
+
+.travel-apps__field {
+  border: none;
+}
+
+.travel-apps__legend {
+  width: 190px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  padding-top: 38px;
+  color: @pink;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.travel-apps__label {
+  position: relative;
+  display: block;
+  margin-top: 2px;
+  margin-bottom: 45px;
+  margin-left: 77px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.travel-apps__label:last-child {
+  margin-bottom: 40px;
+}
+
+.travel-apps__radiobutton {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.travel-apps__custom-radiobutton {
+  position: absolute;
+  left: -70px;
+  top: -4px;
+  width: 39px;
+  height: 39px;
+  box-sizing: border-box;
+  background-color: @white;
+  border: 2px solid @gray-border;
+  border-radius: 50%;
+}
+
+.travel-apps__radiobutton:checked + .travel-apps__custom-radiobutton {
+  background-image: url("../../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: @tablet-width) {
+  .travel-apps {
+    background-color: @white;
+  }
+
+  .travel-apps__container {
+    width: 625px;
+    margin-left: 16px;
+  }
+
+  .travel-apps__field {
+    padding-top: 15px;
+    padding-bottom: 18px;
+    border: 2px solid @gray-border;
+    border-radius: 2px;
+  }
+
+  .travel-apps__legend {
+    width: 360px;
+    padding-top: 0;
+  }
+
+  .travel-apps__label {
+    margin-left: 108px;
+  }
+
+  .travel-apps__custom-radiobutton {
+    left: -60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .travel-apps {
+    width: 439px;
+    box-sizing: border-box;
+  }
+
+  .travel-apps__container {
+    width: 439px;
+    box-sizing: border-box;
+    margin-left: 20px;
+  }
+
+  .travel-apps__field {
+    padding-bottom: 20px;
+  }
+
+  .travel-apps__legend {
+    padding-top: 1px;
+  }
+
+  .travel-apps__label {
+    margin-left: 123px;
+  }
+}

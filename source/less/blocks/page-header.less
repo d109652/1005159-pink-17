@@ -1,199 +1,105 @@
 .page-header {
   margin-bottom: -70px;
   background-color: @bg-navy;
-  padding-top: 15px;
+  padding-top: 9px;
 }
 
 .page-header__logo {
   position: relative;
   z-index: 20;
   display: inline-block;
-  margin-left: 15px;
-  margin-top: 8px;
-  margin-bottom: 14px;
+  left: 100px;
+  margin-top: 3px;
+  margin-bottom: 15px;
+  margin-left: -53px;
 }
 
-.page-header__logo-image {
-  width: 76px;
-  height: 23px;
-}
-
-.main-nav {
-  position: relative;
-  background-color: @bg-navy;
-  color: @white;
-  font-size: 18px;
-  line-height: 32px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.main-nav__toggle {
-  position: absolute;
-  top: -65px;
-  right: 0;
-  width: 60px;
-  height: 60px;
-
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 18px;
-  left: -10px;
-
-  width: 50px;
-  height: 5px;
-
-  background-color: @white;
-  box-shadow: 0 10px 0 0 @white, 0 20px 0 0 @white;
-}
-
-.main-nav--closed .main-nav__toggle:hover::before {
-  background-color: @pink;
-  box-shadow: 0 10px 0 0 @pink, 0 20px 0 0 @pink;
-}
-
-.main-nav--closed .main-nav__toggle:active::before {
-  background-color: rgba(210, 40, 86, 0.3);
-  box-shadow: 0 10px 0 0 rgba(210, 40, 86, 0.3), 0 20px 0 0 rgba(210, 40, 86, 0.3);
-}
-
-.main-nav--opened .main-nav__toggle {
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 25px;
-    right: 16px;
-
-    width: 30px;
-    height: 5px;
-    background-color: @white;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-
-  &:hover::before,
-  &:hover::after {
-    background-color: @pink;
-  }
-
-  &:active::before,
-  &:active::after {
-    background-color: rgba(210, 40, 86, 0.3);
-  }
-}
-
-.main-nav--opened .opacity-box {
+.page-header__logo-image-glass-desktop {
   display: none;
 }
 
-.main-nav--nojs .opacity-box {
+.page-header__logo-image-glass-tablet {
   display: none;
 }
 
-.main-nav--closed .opacity-box {
-  position: absolute;
-  top: -34px;
-  width: 100%;
-  min-height: 106px;
-  margin-top: -76px;
-  background-color: rgba(0, 0, 0, 0.3);
+.page-header__logo-image-stars {
+  display: none;
+}
+
+.page-header__logo:hover path {
+  fill: @pink;
+}
+
+.page-header__logo:active path {
+  fill: @white;
+  opacity: 0.3;
 }
 
 @media (max-width: @mobile-tablet-width-only) {
   .page-header__logo {
-    margin-bottom: 13px;
+    left: 0;
+    top: 5px;
+    padding-bottom: 6px;
   }
 
   .page-header__logo-image {
-    width: 152px;
-    height: 40px;
     margin-top: -13px;
     margin-left: 2px;
   }
-
-  .main-nav--closed .site-list__item {
-    display: none;
-  }
-
-  .main-nav--opened .site-list__item {
-    display: block;
-  }
-
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav--nojs .site-list__item {
-    display: block;
-  }
 }
-
 
 @media (min-width: @tablet-width) {
   .page-header__logo {
     margin-left: 15px;
-    margin-bottom: 32px;
-    padding-top: 18px;
+    margin-bottom: 33px;
+    padding-top: 17px;
+    margin-top: 8px;
+  }
+
+  .page-header__logo-image-glass-tablet {
+    display: inline-block;
   }
 
   .page-header__logo-image {
     width: 152px;
     height: 40px;
   }
-
-  .main-nav__toggle {
-    top: -83px;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  /*
-  .page-header__logo {
-    width: 150px;
-    height: 82px;
-  }*/
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
-    display: flex;
     position: relative;
-    padding: 40px 130px 32px 130px;
-    margin-bottom: -230px;
+
     background-color: rgba(0, 0, 0, 0.3);
   }
 
+  .page-header__container {
+    display: flex;
+    padding: 31px 130px 32px 180px;
+    margin-bottom: -270px;
+  }
+
   .page-header__logo {
-    margin-top: -11px;
+    margin-top: -13px;
     margin-bottom: 0;
-    margin-left: -2px;
+    margin-left: -155px;
     padding-top: 0;
   }
 
-  .main-nav {
-    margin-left: 167px;
-    padding-top: 4px;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 500;
-    text-transform: none;
-    background-color: transparent;
+  .page-header__logo-image {
+    width: 156px;
+    height: 40px;
   }
 
-  .main-nav__toggle {
+  .page-header__logo-image-glass-desktop {
+    display: inline-block;
+  }
+
+  .page-header__logo-image-stars {
+    display: inline-block;
+  }
+
+  .page-header__logo-image-glass-tablet {
     display: none;
   }
 }

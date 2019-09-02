@@ -1,0 +1,134 @@
+.reviews {
+  position: relative;
+  padding-top: 41px;
+  background-color: @white;
+  z-index: 1;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__auther-name {
+  width: 180px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: @black;
+}
+
+.reviews__quote {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 13px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.reviews__slider {
+  display: block;
+  width: 90px;
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-left: 112px;
+  padding-left: 5px;
+}
+
+.reviews-text-mobile-hidden {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__item {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    padding-left: 15px;
+  }
+
+  .reviews__auther-container {
+    width: 252px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    padding-right: 20px;
+  }
+
+  .reviews__auther-name {
+    width: 190px;
+    padding-top: 18px;
+    padding-left: 4px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .reviews-text-mobile-hidden {
+    display: block;
+    width: 190px;
+    margin: 0 auto;
+    margin-top: 2px;
+    padding-left: 3px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+    color: @bg-navy;
+  }
+
+  .reviews__quote {
+    display: block;
+    width: 630px;
+    margin-top: 11px;
+    margin-left: 0;
+    margin-bottom: 17px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+
+  .reviews__slider {
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-top: 2px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    width: 1200px;
+  }
+
+
+  .reviews__slider {
+    display: none;
+  }
+
+  .reviews__quote {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .reviews__auther-container {
+    margin-top: 18px;
+  }
+
+  .reviews__auther-name {
+    width: 218px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .reviews-text-mobile-hidden {
+    width: 230px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

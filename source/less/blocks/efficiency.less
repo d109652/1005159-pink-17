@@ -1,0 +1,132 @@
+.efficiency {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .efficiency {
+    display: block;
+  }
+
+  .efficiency__container {
+    position: relative;
+    padding-left: 20px;
+    display: flex;
+    width: 660px;
+  }
+
+  .efficiency__image {
+    margin-right: 67px;
+    margin-top: 3px;
+    width: 239px;
+    height: 278px;
+    fill: #dedede;
+  }
+
+  .efficiency__nomber {
+    display: block;
+    position: absolute;
+    top: 140px;
+    left: 84px;
+    color: @pink;
+    font-size: 96px;
+    font-weight: 700;
+  }
+
+  .efficiency__nomber::after {
+    content: "";
+    position: absolute;
+    left: -46px;
+    top: -81px;
+    width: 175px;
+    height: 175px;
+    border: 14px solid @pink;
+    border-radius: 50%;
+  }
+
+  .efficiency-text-container {
+    margin-top: 15px;
+  }
+
+  .efficiency__title-container {
+    margin-top: 26px;
+    margin-left: 3px;
+    margin-bottom: -4px;
+  }
+
+  .efficiency__title {
+    width: 170px;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: @black;
+  }
+
+  .efficiency__text {
+    width: 300px;
+    margin-bottom: 7px;
+    margin-left: 3px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+  .efficiency__link {
+    color: @pink;
+    margin-left: 3px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    border-bottom: 1px solid @pink;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .efficiency {
+    width: 1200px;
+    box-sizing: border-box;
+    padding-bottom: 60px;
+    background-color: @gray;
+  }
+
+  .efficiency__image {
+    box-sizing: border-box;
+    margin-top: 25px;
+    margin-left: 100px;
+    width: 304px;
+    height: 350px;
+  }
+
+  .efficiency__nomber {
+    font-size: 120px;
+    left: 200px;
+    top: 200px;
+  }
+
+  .efficiency__nomber::after {
+    left: -55px;
+    top: -105px;
+    width: 220px;
+    height: 220px;
+    border: 15px solid @pink;
+  }
+
+  .efficiency__title {
+    width: 310px;
+    margin-top: 100px;
+    margin-bottom: 22px;
+  }
+
+  .efficiency__text {
+    width: 505px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .efficiency__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
